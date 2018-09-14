@@ -30,7 +30,7 @@ int yylex(void);
 %%
 
 input:  /* empty */
-        | exp    { cout << "Result: " << $1 << endl; }
+        | exp    { exit(0); }
         ;
 
 exp:    INT    { $$ = $1; }
